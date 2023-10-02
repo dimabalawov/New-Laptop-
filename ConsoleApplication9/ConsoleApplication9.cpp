@@ -186,9 +186,9 @@ public:
 };
 int main()
 {
-	Mouse* b=new Mouse;
-	Charger* c=new Charger;
-	Laptop a(b,c);
+	Mouse b;
+	Charger c;
+	Laptop a(&b,&c);
 	a.Show();
 }
 
